@@ -1,0 +1,23 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', 'San-serif';
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+
+:root {
+  --vermelho : #BF1736;
+  --verdeEscuro : #50A638;
+  --verdeClaro : #9DBF21;
+  --azul : #2128BF;
+}
