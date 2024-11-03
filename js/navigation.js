@@ -70,3 +70,46 @@ let toTop = () => window.scrollTo(0, 0);
 srcollTop.addEventListener('click', () => toTop())
 
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    window.sr = ScrollReveal({ reset: true });
+
+    sr.reveal('.content', {
+        easing: "ease-in-out",
+        interval: 500,
+        reset: true,
+        distance: '5%',
+        origin: 'left',
+    });
+
+    sr.reveal('.img_inicial', {
+        easing: "ease-in-out",
+        interval: 500,
+        reset: true,
+        distance: '5%',
+        origin: 'right',
+    });
+
+    sr.reveal('.card_sobre', {
+        easing: "ease-in-out",
+        reset: false,
+        distance: '5%',
+        origin: 'center',
+    });
+
+    sr.reveal('.card_contact', {
+        easing: "ease-in-out",
+        reset: false,
+        distance: '20%',
+        origin: 'bottom',
+    });
+
+    sr.reveal('.cards_carrosel', {
+        easing: "ease-in-out",
+        reset: false,
+        distance: '20%',
+        origin: 'bottom',
+    });
+
+});
+
+
