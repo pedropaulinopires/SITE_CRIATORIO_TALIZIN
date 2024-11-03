@@ -28,10 +28,10 @@
             <div class="btn_menu_close_mobile" id="btn_menu_close_mobile"></div>
         </div>
         <div class="content_body_menu_mobile">
-            <a href="#" class="option_menu_moblie">Inicio</a>
-            <a href="#" class="option_menu_moblie">Sobre</a>
-            <a href="#" class="option_menu_moblie">Contato</a>
-            <a href="#" class="option_menu_moblie">Nossas Aves</a>
+            <a href="#" class="option_menu_moblie" data-navigation="inicio">Inicio</a>
+            <a href="#" class="option_menu_moblie" data-navigation="sobre">Sobre</a>
+            <a href="#" class="option_menu_moblie" data-navigation="contato">Contato</a>
+            <a href="#" class="option_menu_moblie" data-navigation="aves">Nossas Aves</a>
         </div>
         <div class="content_footer_menu_mobile">
             <div class="icones_sociais_menu_mobile">
@@ -58,7 +58,7 @@
     </div>
 
     <main>
-        <section class="section_home">
+        <section class="section_home" id="inicio">
             <div class="content">
                 <div class="title_top">
                     <div class="bird_icon">
@@ -74,11 +74,6 @@
 
                 <div class="btns_group">
                     <div class="btn_reverse_contact">
-                        <!-- <img src="svg/whatsapp-line.svg" alt="whatsapp-line"> -->
-                        <!-- <svg>
-                            <image href="svg/whatsapp-line.svg"/>
-                        </svg>
-                        -->
                         <svg width="35" height="35" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.80803 14.4493C4.80803 9.08425 9.15724 4.73504 14.5222 4.73504C19.8872 4.73504 24.2365 9.08425 24.2365 14.4493C24.2365 19.8143 19.8872 24.1635 14.5222 24.1635C12.6112 24.1635 10.8323 23.6129 9.33138 22.6619C9.05206 22.485 8.70979 22.4377 8.39294 22.5322L5.10251 23.5142L6.3414 20.6153C6.48784 20.2727 6.45804 19.8802 6.26156 19.5636C5.34023 18.079 4.80803 16.328 4.80803 14.4493ZM14.5222 2.44934C7.89488 2.44934 2.52233 7.82189 2.52233 14.4493C2.52233 16.5499 3.06306 18.5273 4.01333 20.2466L2.04285 24.8572C1.86865 25.2649 1.94587 25.7364 2.24096 26.0671C2.53606 26.398 2.99581 26.5283 3.42058 26.4014L8.56274 24.8669C10.3193 25.8738 12.355 26.4492 14.5222 26.4492C21.1496 26.4492 26.5222 21.0766 26.5222 14.4493C26.5222 7.82189 21.1496 2.44934 14.5222 2.44934ZM17.1422 16.9434L15.6403 18.0014C14.9369 17.6007 14.1591 17.0414 13.379 16.2613C12.5681 15.4503 11.9668 14.613 11.5235 13.845L12.478 13.0349C12.8876 12.6872 12.9997 12.1011 12.7474 11.6267L11.5312 9.34105C11.3674 9.03326 11.0721 8.81707 10.7293 8.75392C10.3864 8.69077 10.0335 8.78759 9.7708 9.01683L9.41022 9.33152C8.5431 10.0883 8.03027 11.3319 8.45531 12.5911C8.89596 13.8965 9.83635 15.951 11.7628 17.8775C13.8355 19.9501 15.9408 20.7664 17.172 21.0834C18.164 21.3387 19.1028 20.9964 19.7643 20.4575L20.4402 19.9066C20.7294 19.6711 20.8854 19.3091 20.8582 18.9371C20.8309 18.5651 20.6238 18.2298 20.3033 18.0388L18.3853 16.896C17.9979 16.6652 17.511 16.6838 17.1422 16.9434Z"
@@ -87,15 +82,17 @@
                         Acessar
                     </div>
 
-                    <div class="btn_saiba_mais">
+                    <div class="btn_saiba_mais" data-navigation="sobre">
                         Saiba mais
                     </div>
                 </div>
             </div>
             <img src="imgs/img-inicial.png" alt="img_inicial" class="img_inicial">
         </section>
+
         <div class="divisor"></div>
-        <section class="section_sobre">
+
+        <section class="section_sobre" id="sobre">
             <div class="title_section">
                 <div class="title_top">
                     <div class="bird_icon">
@@ -128,9 +125,111 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <div class="divisor"></div>
+
+        <section class="section_contact" id="contato">
+            <div class="card_contact">
+                <h2>Entre em <strong>Contato</strong> e Conheça Nossas <strong> Melhores</strong> Aves!</h2>
+                <div class="btn_reverse_contact">
+                    <svg width="35" height="35" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.80803 14.4493C4.80803 9.08425 9.15724 4.73504 14.5222 4.73504C19.8872 4.73504 24.2365 9.08425 24.2365 14.4493C24.2365 19.8143 19.8872 24.1635 14.5222 24.1635C12.6112 24.1635 10.8323 23.6129 9.33138 22.6619C9.05206 22.485 8.70979 22.4377 8.39294 22.5322L5.10251 23.5142L6.3414 20.6153C6.48784 20.2727 6.45804 19.8802 6.26156 19.5636C5.34023 18.079 4.80803 16.328 4.80803 14.4493ZM14.5222 2.44934C7.89488 2.44934 2.52233 7.82189 2.52233 14.4493C2.52233 16.5499 3.06306 18.5273 4.01333 20.2466L2.04285 24.8572C1.86865 25.2649 1.94587 25.7364 2.24096 26.0671C2.53606 26.398 2.99581 26.5283 3.42058 26.4014L8.56274 24.8669C10.3193 25.8738 12.355 26.4492 14.5222 26.4492C21.1496 26.4492 26.5222 21.0766 26.5222 14.4493C26.5222 7.82189 21.1496 2.44934 14.5222 2.44934ZM17.1422 16.9434L15.6403 18.0014C14.9369 17.6007 14.1591 17.0414 13.379 16.2613C12.5681 15.4503 11.9668 14.613 11.5235 13.845L12.478 13.0349C12.8876 12.6872 12.9997 12.1011 12.7474 11.6267L11.5312 9.34105C11.3674 9.03326 11.0721 8.81707 10.7293 8.75392C10.3864 8.69077 10.0335 8.78759 9.7708 9.01683L9.41022 9.33152C8.5431 10.0883 8.03027 11.3319 8.45531 12.5911C8.89596 13.8965 9.83635 15.951 11.7628 17.8775C13.8355 19.9501 15.9408 20.7664 17.172 21.0834C18.164 21.3387 19.1028 20.9964 19.7643 20.4575L20.4402 19.9066C20.7294 19.6711 20.8854 19.3091 20.8582 18.9371C20.8309 18.5651 20.6238 18.2298 20.3033 18.0388L18.3853 16.896C17.9979 16.6652 17.511 16.6838 17.1422 16.9434Z"
+                            fill="#9DBF21" />
+                    </svg>
+                    Acessar
+                </div>
+            </div>
+            <img src="imgs/banner-mobile1.png" alt="banner-mobile1" oncontextmenu="return false;"
+                class="banner-mobile1">
+        </section>
+
+        <div class="divisor"></div>
+
+        <section class="section_aves" id="aves">
+            <div class="title_section">
+                <div class="title_top">
+                    <div class="bird_icon">
+                        <img src="svg/bird.svg" alt="bird_icon">
+                    </div>
+                    <h3>Imagens da nossa dedicação</h3>
+                </div>
+                <h2>Conheça a Elegância e Variedade das Aves do Criatório Talizin</h2>
+            </div>
+            <div class="content_aves">
+                <div class="cards_carrosel" id="cards_carrosel">
+                    <div class="card_ave">
+                    </div>
+
+                    <div class="card_ave">
+                    </div>
+
+                    <div class="card_ave">
+                    </div>
+
+                    <div class="card_ave">
+                    </div>
+                </div>
+                <img src="imgs/banner-mobile2.png" alt="banner-mobile2" oncontextmenu="return false;"
+                    class="banner-mobile2">
+            </div>
+        </section>
+        <img src="imgs/banner-criatorio.png" alt="banner-criatorio" class="banner-criatorio">
+    </main>
+    <div class="scroll-top" id="scroll-top">
+        <img src="svg/arrow_scrolltop.svg" alt="arrow_scrolltop">
+    </div>
+    <footer>
+        <div class="content_footer">
+            <div class="conteudo">
+                <h3>
+                    Criatório Talizin
+                </h3>
+                <p>
+                    Especialistas em criação e reprodução de aves ornamentais de qualidade.
+                </p>
+            </div>
+
+            <div class="conteudo">
+                <h3>
+                    Contato
+                </h3>
+                <p>
+                    Email: contato@criatoriotalizin.com
+                    WhatsApp: (11) 99999-9999
+                </p>
+            </div>
+
+            <div class="conteudo">
+                <h3>
+                    Redes sociais
+                </h3>
+                <div class="links_sociais_footer">
+                    <a href="#" class="link_logo_social_menu">
+                        <div class="logo_social_menu icone_youtube"></div>
+                    </a>
+                    <a href="#" class="link_logo_social_menu">
+                        <div class="logo_social_menu icone_facebook"></div>
+                    </a>
+                    <a href="#" class="link_logo_social_menu">
+                        <div class="logo_social_menu icone_tiktok"></div>
+                    </a>
+                    <a href="#" class="link_logo_social_menu">
+                        <div class="logo_social_menu icone_instagram"></div>
+                    </a>
+                    <a href="#" class="link_logo_social_menu">
+                        <div class="logo_social_menu icone_whatsapp"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <h3>© 2024 Criatório Talizin. Todos os direitos reservados.</h3>
+        </div>
+    </footer>
     <script src="js/menu.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/carrosel_card.js" defer></script>
 </body>
 
 </html>

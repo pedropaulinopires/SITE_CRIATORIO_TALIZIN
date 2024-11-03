@@ -14,7 +14,7 @@ btn_menu_close_mobile.addEventListener('click', () => toggleMenuContent()
 
 option_menu_moblies.map((ele) => ele.addEventListener('click', () => toggleMenuContent()));
 
-link_logo_social_menus.map((ele) => ele.addEventListener('click', () => toggleMenuContent()));
+link_logo_social_menus.map((ele) => ele.addEventListener('click', () => content_menu_mobile.classList.remove('active')));
 
 let lastWidth = window.innerWidth;
 
