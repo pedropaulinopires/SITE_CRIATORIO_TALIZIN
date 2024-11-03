@@ -16,4 +16,13 @@ option_menu_moblies.map((ele) => ele.addEventListener('click', () => toggleMenuC
 
 link_logo_social_menus.map((ele) => ele.addEventListener('click', () => toggleMenuContent()));
 
-window.addEventListener('resize', () => content_menu_mobile.classList.remove('active'))
+let lastWidth = window.innerWidth;
+
+window.addEventListener('resize', () => {
+  const currentWidth = window.innerWidth;
+  
+  if (currentWidth !== lastWidth) {
+    content_menu_mobile.classList.remove('active');
+    lastWidth = currentWidth;
+  }
+});
