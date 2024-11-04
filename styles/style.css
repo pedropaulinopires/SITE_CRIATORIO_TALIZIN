@@ -61,6 +61,10 @@ p {
   height: 100px;
 }
 
+.no-scoll {
+  overflow: hidden;
+}
+
 .title_section {
   margin: auto;
 }
@@ -182,21 +186,41 @@ header {
   }
 }
 
+.menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.519);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+.menu_overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
 
 .content_menu_mobile {
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+  right: 0;
+  height: 90vh;
+  max-height: 460px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
   background-color: white;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   opacity: 0;
   pointer-events: none;
   overflow-y: scroll;
-  transition: all .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
 }
 
 .content_menu_mobile.active {
@@ -220,7 +244,7 @@ header {
 
 .content_body_menu_mobile a {
   color: var(--verdeClaro);
-  font-size: 30px;
+  font-size: 35px;
   font-family: 'BebasNeue';
   opacity: 0;
   transform: translateY(20px);
@@ -273,32 +297,25 @@ header {
 }
 
 .content_footer_menu_mobile {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: end;
-  padding-bottom: 20px;
-  gap: 20px;
-  width: 90vw;
-  max-width: 500px;
-  margin: auto;
-  margin-top: 100px;
-  padding-bottom: 10vh;
-  text-align: center;
+  padding-top: 30px;
+  padding-right: 20px;
 }
 
 .icones_sociais_menu_mobile {
   display: flex;
   gap: 15px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   opacity: 0;
   transition: all .3s ease-in-out;
 }
 
 .content_menu_mobile.active .icones_sociais_menu_mobile {
   opacity: 1;
-  transition-delay: .1s;
+  transition-delay: .2s;
 }
 
 .logo_social_menu {
@@ -350,7 +367,6 @@ header {
 
 main {
   padding-top: 100px;
-  min-height: 1000px;
 }
 
 /* SESSÃO INICIAL*/
