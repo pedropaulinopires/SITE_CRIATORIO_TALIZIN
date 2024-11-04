@@ -223,6 +223,10 @@ header {
   transition: opacity .1s ease-in-out;
 }
 
+.content_menu_mobile::-webkit-scrollbar {
+  width: 0px;
+}
+
 .content_menu_mobile.active {
   opacity: 1;
   pointer-events: all;
