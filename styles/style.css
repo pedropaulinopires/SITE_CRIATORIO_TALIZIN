@@ -571,6 +571,11 @@ main {
 .section_contact {
   display: flex;
   justify-content: center;
+  background-image: url(../imgs/banner-mobile1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+
 }
 
 .card_contact {
@@ -598,7 +603,7 @@ main {
 }
 
 .banner-mobile1 {
-  height: 100%;
+  height: 700px;
   width: 100%;
   user-select: none;
 }
